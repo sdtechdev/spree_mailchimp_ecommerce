@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   spree_version = '>= 3.3.0', '< 5.0'
 
   s.add_dependency 'gibbon', '~> 3.3'
+  s.add_dependency 'solidus_core', '>= 1.0.0', '< 3.0.0'
   s.add_dependency 'spree_core', spree_version
   s.add_dependency 'spree_backend', spree_version
   s.add_dependency 'spree_extension'
