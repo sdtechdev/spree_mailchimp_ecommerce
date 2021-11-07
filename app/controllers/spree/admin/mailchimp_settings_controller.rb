@@ -55,7 +55,7 @@ module Spree
       def mailchimp_setting_attributes
         @mailchimp_setting = MailchimpSetting.new(permitted_params)
         @mailchimp_setting.mailchimp_store_id = @mailchimp_setting.create_store_id
-        @mailchimp_setting.cart_url = "#{::Rails.application.routes.url_helpers.spree_url}cart"
+        @mailchimp_setting.cart_url = ::Rails.application.routes.url_helpers.cart_url(host: request.host)
       end
     end
   end
