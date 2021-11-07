@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'gibbon', '~> 3.3'
   s.add_dependency 'solidus_core', '>= 1.0.0', '< 3.0.0'
-  s.add_dependency 'spree_extension'
   s.add_dependency 'deface'
 
   s.add_development_dependency 'chromedriver-helper'
